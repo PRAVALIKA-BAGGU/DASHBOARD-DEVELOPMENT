@@ -31,3 +31,8 @@ In summary, the dashboard analysis project demonstrated how to transform raw sal
 
 *OUTPUT*:
 
+![Image](https://github.com/user-attachments/assets/eb16af0e-be7f-4d01-a091-0866e7498768)
+![Image](https://github.com/user-attachments/assets/aedd19a5-9ba8-4f36-a435-28d7ebe0d7c9)
+![Image](https://github.com/user-attachments/assets/bd0eda1b-528e-4e61-8cff-98dca3898631)
+![Image](https://github.com/user-attachments/assets/801b0ab4-4df9-4bdb-9d13-85e71b2e41f0)
+![Image](https://github.com/user-attachments/assets/e1694a57-3329-495c-bc90-047e0aa531cd)
