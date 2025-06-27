@@ -1,0 +1,60 @@
+import plotly.express as px
+import plotly.graph_objects as go
+
+# 1. Sales by Region (Bar Chart)
+fig_region_sales = px.bar(
+    region_sales.reset_index(), 
+    x='Region', 
+    y='Sales',
+    title='Sales by Region', 
+    color='Sales'
+)
+fig_region_sales.update_layout(title_x=0.5)
+fig_region_sales.show()
+
+# 2. Top Profitable Products (Horizontal Bar)
+fig_top_products = px.bar(
+    top_products.sort_values().reset_index(),
+    x='Profit', 
+    y='Product Name', 
+    orientation='h',
+    title='Top 5 Profitable Products',
+    color='Profit'
+)
+fig_top_products.update_layout(title_x=0.5)
+fig_top_products.show()
+
+# 3. Worst Products (Loss-makers)
+fig_worst_products = px.bar(
+    worst_products.sort_values().reset_index(),
+    x='Profit', 
+    y='Product Name', 
+    orientation='h',
+    title='Top 5 Loss-Making Products',
+    color='Profit'
+)
+fig_worst_products.update_layout(title_x=0.5)
+fig_worst_products.show()
+
+# 4. Discount by Category (Pie Chart)
+fig_discount_pie = px.pie(
+    names=avg_discount_category.index,
+    values=avg_discount_category.values,
+    title='Average Discount by Category',
+    hole=0.4
+)
+fig_discount_pie.update_layout(title_x=0.5)
+fig_discount_pie.show()
+
+# 5. Profit by Sub-Category (Bar)
+fig_top_subcats = px.bar(
+    top_subcats.sort_values().reset_index(),
+    x='Profit', 
+    y='Sub-Category',
+    orientation='h',
+    title='Top 5 Profitable Sub-Categories',
+    color='Profit'
+)
+fig_top_subcats.update_layout(title_x=0.5)
+fig_top_subcats.show()
+
